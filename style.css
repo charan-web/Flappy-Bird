@@ -3,21 +3,47 @@ body{
     margin:0;
     box-sizing: 0;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 100vh;
-    background-color: whitesmoke;
-
-
+    align-items: center;
+    background-color: rgb(95, 226, 226);
+}
+#score{
+    align-items: center;
+    display:flex;
+    background:rgb(124, 0, 128);
+    padding:1.2em;
+    font-weight: 900;
+    color:rgb(242, 242, 243);
+    letter-spacing: 2px;
+    text-transform:capitalize;
+    border-radius: 10px;
+    cursor:pointer;
+    
+}
+#score span{
+    color:rgb(92, 23, 23);
+}
+#highScore{
+    position: absolute;
+    top:41%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:rgb(37, 25, 201);
+    z-index:9;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .btn{
     align-self: center;
 }
 h1{
     position: absolute;
-    top:50%;
+    top:35%;
     left:50%;
     transform:translate(-50%,-50%);
-    color:rgb(228, 11, 11);
+    color:rgb(15, 10, 85);
+    z-index:9;
 }
 span{
     width:120px;
@@ -62,11 +88,14 @@ span > img{
 
 
 .game-container{
+    border-radius:2px;
+    border:2px solid blue;
     position: relative;
     width:500px;
     height: 580px;
     background-color:rgb(32, 94, 209);
     overflow: hidden;
+    box-shadow: 2px 2px  2px rgb(97, 146, 165);
 
 
 }
@@ -94,4 +123,17 @@ span > img{
 
         background-image:url("flappybird-pipe.png" );
 
+}
+#restart{
+   
+    right:50px;
+    margin-top:50px;
+    background:green;
+    padding:2em;
+    font-weight: 900;
+    color:rgb(242, 242, 243);
+    letter-spacing: 2px;
+    text-transform:capitalize;
+    border-radius: 10px;
+    cursor:pointer;
 }
